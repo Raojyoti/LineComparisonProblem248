@@ -37,11 +37,18 @@ namespace LineComparisonProblem
             y3 = Convert.ToInt32(Console.ReadLine());
             y4 = Convert.ToInt32(Console.ReadLine());
             lengthOfLine1 = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
-            Console.WriteLine("Length of Line: {0}", lengthOfLine1);
+            Console.WriteLine("Length of Line1: {0}", lengthOfLine1);
             lengthOfLine2 = Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
-            Console.WriteLine("Length of Line: {0}", lengthOfLine2);
-            bool checkEquality=lengthOfLine1.Equals(lengthOfLine2);
-            Console.WriteLine("Equality Of Two Lines: {0}",checkEquality);
+            Console.WriteLine("Length of Line2: {0}", lengthOfLine2);
+            bool result = lengthOfLine1.Equals(lengthOfLine2);
+            if (result == true)
+            {
+                Console.WriteLine("Lines are equal");
+            }
+            else
+            {
+                Console.WriteLine("Lines are not equal");
+            }
         }
     }
 }
