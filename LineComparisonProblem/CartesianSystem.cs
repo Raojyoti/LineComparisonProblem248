@@ -83,7 +83,5 @@ namespace LineComparisonProblem
                 Console.WriteLine("line 2 is greater than line 1 ");
             }
         }
-
-
     }
 }
