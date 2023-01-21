@@ -11,7 +11,7 @@ namespace LineComparisonProblem
             while (true)
             {
                 Console.WriteLine("Select given options");
-                Console.WriteLine("1.CalculateLengthOfLine\n2.CheckEqualityOfTwoLines\n3.Exit");
+                Console.WriteLine("1.CalculateLengthOfLine\n2.CheckEqualityOfTwoLines\n3.CompareTwoLines\n4.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -24,6 +24,10 @@ namespace LineComparisonProblem
                         CartesianSystem.CheckEqualityOfTwoLines();
                         break;
                     case 3:
+                        Console.Clear();
+                        CartesianSystem.CompareTwoLines();
+                        break;
+                    case 4:
                         Console.Clear();
                         break;
                     default:
