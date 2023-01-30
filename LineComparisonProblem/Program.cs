@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using static LineComparisonProblem.CartesianSystem;
 
 namespace LineComparisonProblem
 {
@@ -11,7 +12,7 @@ namespace LineComparisonProblem
             while (true)
             {
                 Console.WriteLine("Select given options");
-                Console.WriteLine("1.CalculateLengthOfLine\n2.CheckEqualityOfTwoLines\n3.CompareTwoLines\n4.Exit");
+                Console.WriteLine("1.CalculateLengthOfLine\n2.CheckEqualityOfTwoLines\n3.CompareTwoLines\n4.UsingOOPsConceptsComparetwolinesAndCheckEquality\n5.Exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -28,6 +29,10 @@ namespace LineComparisonProblem
                         CartesianSystem.CompareTwoLines();
                         break;
                     case 4:
+                        Console.Clear();
+                        CartesianSystem.CheckEqualityAndCompareTwoLines();
+                        break;
+                    case 5:
                         Console.Clear();
                         break;
                     default:
